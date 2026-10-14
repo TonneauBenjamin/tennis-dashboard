@@ -7,6 +7,9 @@ never relies on colour alone.
 """
 from __future__ import annotations
 
+import hashlib
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -288,11 +291,20 @@ def qpv_trend_chart(tennis: pd.Series, bench: pd.Series) -> go.Figure:
 # ==================================================================
 # Page building blocks: cached calls, section headers, insight boxes, accessible charts, KPI header
 # ==================================================================
+# Fingerprint of the calculation code: when prep.py changes (e.g. after a git push on Streamlit Cloud,
+# where the process keeps running), cached results from the old code are no longer reused.
+PREP_VERSION = hashlib.md5(Path(prep.__file__).read_bytes()).hexdigest()
+
+
 @st.cache_data(show_spinner=False, max_entries=256)
-def cached(fn_name: str, _d: prep.Data, f: prep.Filters, *args):
-    """Memoise any analysis function on (filters, args). `_d` is skipped from hashing:
-    the processed data is immutable for the life of the process."""
+def _cached(fn_name: str, version: str, _d: prep.Data, f: prep.Filters, *args):
     return getattr(prep, fn_name)(_d, f, *args)
+
+
+def cached(fn_name: str, _d: prep.Data, f: prep.Filters, *args):
+    """Memoise any analysis function on (code version, filters, args). `_d` is skipped from hashing:
+    the processed data is immutable for the life of the process."""
+    return _cached(fn_name, PREP_VERSION, _d, f, *args)
 
 
 def inject_css() -> None:
