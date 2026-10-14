@@ -4,7 +4,8 @@
 
 An interactive Streamlit data story built on the official INJEP census of sports licences (data.gouv.fr).
 
-- **Live app:** `<add Streamlit Community Cloud URL>`
+- **Live app:** https://tennis-dashboard-tonneau-benjamin.streamlit.app/
+- **Code repository:** https://github.com/TonneauBenjamin/tennis-dashboard
 - **Demo video (3 min):** `<add video link>`
 - **Author:** Clément Tonneau · student ID 20230792 · group I2-DE_01 · EFREI Paris, Data Visualization 2026 (#EFREIDataStories2026)
 
