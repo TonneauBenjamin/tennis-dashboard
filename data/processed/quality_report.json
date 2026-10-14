@@ -1,0 +1,268 @@
+{
+  "years": [
+    {
+      "year": 2019,
+      "rows": 939328,
+      "columns": 54,
+      "sex_age_columns": 44,
+      "missing_id_columns": [],
+      "missing_values": {
+        "Code Commune": 0,
+        "Commune": 823,
+        "Code QPV": 0,
+        "Nom QPV": 887070,
+        "Département": 0,
+        "Région": 0,
+        "Statut géo": 0,
+        "Code": 0,
+        "Fédération": 0
+      },
+      "non_numeric_cells": 0,
+      "negative_cells": 0,
+      "missing_count_cells": 0,
+      "rows_where_sex_age_sum_differs_from_total": 0,
+      "duplicate_keys": 0,
+      "naive_duplicates_commune_qpv_only": 717,
+      "licences_total": 16333668,
+      "licences_out_of_scope": 438591,
+      "share_out_of_scope_pct": 2.69,
+      "licences_in_scope_unallocated_to_commune": 173880,
+      "licences_unknown_sex": 453469,
+      "licences_unknown_age": 55071,
+      "tennis_licences": 978895,
+      "tennis_rows": 28947,
+      "tennis_communes": 27485,
+      "tennis_federation_names": [
+        "FF de Tennis"
+      ],
+      "federations": 110,
+      "federations_with_duplicate_names": 0
+    },
+    {
+      "year": 2020,
+      "rows": 937465,
+      "columns": 47,
+      "sex_age_columns": 37,
+      "missing_id_columns": [],
+      "missing_values": {
+        "Code Commune": 0,
+        "Commune": 898,
+        "Code QPV": 0,
+        "Nom QPV": 886206,
+        "Département": 0,
+        "Région": 0,
+        "Statut géo": 0,
+        "Code": 0,
+        "Fédération": 0
+      },
+      "non_numeric_cells": 0,
+      "negative_cells": 0,
+      "missing_count_cells": 0,
+      "rows_where_sex_age_sum_differs_from_total": 0,
+      "duplicate_keys": 0,
+      "naive_duplicates_commune_qpv_only": 793,
+      "licences_total": 15744427,
+      "licences_out_of_scope": 257509,
+      "share_out_of_scope_pct": 1.64,
+      "licences_in_scope_unallocated_to_commune": 158879,
+      "licences_unknown_sex": 219,
+      "licences_unknown_age": 38795,
+      "tennis_licences": 972007,
+      "tennis_rows": 28888,
+      "tennis_communes": 27424,
+      "tennis_federation_names": [
+        "FF de Tennis"
+      ],
+      "federations": 110,
+      "federations_with_duplicate_names": 0
+    },
+    {
+      "year": 2021,
+      "rows": 882179,
+      "columns": 47,
+      "sex_age_columns": 37,
+      "missing_id_columns": [],
+      "missing_values": {
+        "Code Commune": 0,
+        "Commune": 700,
+        "Code QPV": 0,
+        "Nom QPV": 837122,
+        "Département": 0,
+        "Région": 0,
+        "Statut géo": 0,
+        "Code": 0,
+        "Fédération": 0
+      },
+      "non_numeric_cells": 0,
+      "negative_cells": 0,
+      "missing_count_cells": 0,
+      "rows_where_sex_age_sum_differs_from_total": 0,
+      "duplicate_keys": 0,
+      "naive_duplicates_commune_qpv_only": 594,
+      "licences_total": 12870569,
+      "licences_out_of_scope": 221474,
+      "share_out_of_scope_pct": 1.72,
+      "licences_in_scope_unallocated_to_commune": 112758,
+      "licences_unknown_sex": 219,
+      "licences_unknown_age": 39569,
+      "tennis_licences": 947288,
+      "tennis_rows": 28418,
+      "tennis_communes": 26999,
+      "tennis_federation_names": [
+        "FF de Tennis"
+      ],
+      "federations": 110,
+      "federations_with_duplicate_names": 0
+    },
+    {
+      "year": 2022,
+      "rows": 981132,
+      "columns": 46,
+      "sex_age_columns": 36,
+      "missing_id_columns": [],
+      "missing_values": {
+        "Code Commune": 0,
+        "Commune": 718,
+        "Code QPV": 0,
+        "Nom QPV": 929940,
+        "Département": 0,
+        "Région": 0,
+        "Statut géo": 0,
+        "Code": 0,
+        "Fédération": 0
+      },
+      "non_numeric_cells": 0,
+      "negative_cells": 0,
+      "missing_count_cells": 0,
+      "rows_where_sex_age_sum_differs_from_total": 0,
+      "duplicate_keys": 0,
+      "naive_duplicates_commune_qpv_only": 611,
+      "licences_total": 15291830,
+      "licences_out_of_scope": 184338,
+      "share_out_of_scope_pct": 1.21,
+      "licences_in_scope_unallocated_to_commune": 146784,
+      "licences_unknown_sex": 0,
+      "licences_unknown_age": 4252,
+      "tennis_licences": 1044574,
+      "tennis_rows": 29069,
+      "tennis_communes": 27602,
+      "tennis_federation_names": [
+        "FF de Tennis"
+      ],
+      "federations": 115,
+      "federations_with_duplicate_names": 0
+    },
+    {
+      "year": 2023,
+      "rows": 1014746,
+      "columns": 46,
+      "sex_age_columns": 36,
+      "missing_id_columns": [],
+      "missing_values": {
+        "Code Commune": 0,
+        "Commune": 727,
+        "Code QPV": 0,
+        "Nom QPV": 956512,
+        "Département": 0,
+        "Région": 0,
+        "Statut géo": 0,
+        "Code": 0,
+        "Fédération": 0
+      },
+      "non_numeric_cells": 0,
+      "negative_cells": 0,
+      "missing_count_cells": 0,
+      "rows_where_sex_age_sum_differs_from_total": 0,
+      "duplicate_keys": 0,
+      "naive_duplicates_commune_qpv_only": 620,
+      "licences_total": 16535056,
+      "licences_out_of_scope": 205918,
+      "share_out_of_scope_pct": 1.25,
+      "licences_in_scope_unallocated_to_commune": 160151,
+      "licences_unknown_sex": 0,
+      "licences_unknown_age": 1857,
+      "tennis_licences": 1106989,
+      "tennis_rows": 29656,
+      "tennis_communes": 28073,
+      "tennis_federation_names": [
+        "FF de Tennis"
+      ],
+      "federations": 117,
+      "federations_with_duplicate_names": 0
+    }
+  ],
+  "cross_checks": [
+    {
+      "year": 2019,
+      "tennis_in_scope_expected": 968470,
+      "fed_long": 968470,
+      "tennis_age": 968470,
+      "fed_qpv": 968470,
+      "consistent": true
+    },
+    {
+      "year": 2020,
+      "tennis_in_scope_expected": 961927,
+      "fed_long": 961927,
+      "tennis_age": 961927,
+      "fed_qpv": 961927,
+      "consistent": true
+    },
+    {
+      "year": 2021,
+      "tennis_in_scope_expected": 937938,
+      "fed_long": 937938,
+      "tennis_age": 937938,
+      "fed_qpv": 937938,
+      "consistent": true
+    },
+    {
+      "year": 2022,
+      "tennis_in_scope_expected": 1036270,
+      "fed_long": 1036270,
+      "tennis_age": 1036270,
+      "fed_qpv": 1036270,
+      "consistent": true
+    },
+    {
+      "year": 2023,
+      "tennis_in_scope_expected": 1096180,
+      "fed_long": 1096180,
+      "tennis_age": 1096180,
+      "fed_qpv": 1096180,
+      "consistent": true
+    }
+  ],
+  "population": {
+    "departments": 100,
+    "population_years_used": [
+      2019,
+      2020,
+      2021
+    ],
+    "france_population_2021": 67408052,
+    "departments_without_population": []
+  },
+  "geometry": {
+    "departments_without_shape": [],
+    "features": 100
+  },
+  "federations_recoded_between_years": [
+    "FF de Baseball, Softball",
+    "FF de Danse",
+    "FF de Football Américain",
+    "FF de Karaté et DA",
+    "FF de Squash",
+    "FF des Clubs Alpins et de Montagne"
+  ],
+  "processed_bytes": {
+    "departments.parquet": 4630,
+    "fed_long.parquet": 886996,
+    "fed_qpv.parquet": 214212,
+    "federations.parquet": 16100,
+    "population.parquet": 5319,
+    "scope.parquet": 11130,
+    "tennis_age.parquet": 37568,
+    "tennis_commune.parquet": 1295015
+  }
+}
