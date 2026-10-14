@@ -144,7 +144,9 @@ def render_data_quality(d: A.Data, f: A.Filters, q: dict) -> None:
 5. **Stable federation key** from the normalised name, because INJEP re-coded
    {len(q['federations_recoded_between_years'])} federations between years
    ({', '.join(q['federations_recoded_between_years'])}).
-6. **Benchmark** = all single-sport federations (codes 1xx and 2xx) except tennis.
+6. **Benchmark** = single-sport federations (codes 1xx and 2xx) except tennis, **only the 79 present in all five
+   years**: fixed membership, so federations entering the census late or missing a year (kick-boxing 2021,
+   squash and twirling 2020) cannot pass for growth or for an extra COVID drop.
 7. **QPV flag** from `Code QPV` (`QP…`/`QN…` = inside; `CSZ`/`HZ` = outside; `NR` = unallocated, excluded).
 8. **Join population** (INSEE legal population, département sum of communes; 2022–23 → 2021).
 9. **Pre-aggregate** to département × federation × sex × age group (~400k rows) so every filter runs in

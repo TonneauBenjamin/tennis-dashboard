@@ -53,7 +53,8 @@ def render(d: A.Data, f: A.Filters) -> None:
             "The census also counts school sport (UNSS, USEP, UGSEL) and multi-sport federations. Their licences "
             "are often compulsory or bundled with school, and they fell 30–40% in 2021, which would make any "
             "club sport look resilient. The benchmark here is the **sum of all other single-sport federations** "
-            "(Olympic and non-Olympic, tennis excluded), always with the same filters as tennis. "
+            "(Olympic and non-Olympic, tennis excluded), restricted to the 79 federations with data in all five "
+            "years so the group is identical every year, and always with the same filters as tennis. "
             "The sport chosen in the sidebar is shown on its own line *and* stays inside that sum.")
 
     st.subheader("Was tennis special, or were other sports spared too?", anchor=False)

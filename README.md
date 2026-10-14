@@ -21,10 +21,10 @@ An interactive Streamlit data story built on the official INJEP census of sports
 
 **Key insights (France, 2019 → 2023, geocoded scope):**
 
-1. **Resilience.** At the COVID low (2021) tennis was **−3.2%** below 2019, against **−17.1%** for all other single-sport federations combined. Among the 35 largest single-sport federations it ranks **#4 for resilience** (after equestrian, rugby and shooting) and **#6 for growth**.
-2. **Growth.** By 2023 tennis reached **1,096,180** licences: **+13.2%**, against **+3.9%** for the benchmark.
+1. **Resilience.** At the COVID low (2021) tennis was **−3.2%** below 2019, against **−16.5%** for the 79 other single-sport federations present in every year, combined. Among the 35 largest single-sport federations it ranks **#4 for resilience** (after equestrian, rugby and shooting) and **#6 for growth**.
+2. **Growth.** By 2023 tennis reached **1,096,180** licences: **+13.2%**, against **+3.7%** for the benchmark (+9.4 points).
 3. **Who.** **Young adults (20–34) grew +34.9%** against +2.3% in other sports. They were 11% of tennis licences in 2019 but brought **29% of the net new licences**. Among them, women's share *fell* from 29.1% to 26.2%.
-4. **Gender gap unchanged.** Women's share stayed at **29.8%** (+0.4 pt), below the 33.6% of other single-sport federations: about 2.4 men per woman.
+4. **Gender gap unchanged.** Women's share stayed at **29.8%** (+0.4 pt), below the 33.5% of other single-sport federations: about 2.4 men per woman.
 5. **Where.** Density ranges **8×**, from 31.5 licences per 1,000 residents (Hauts-de-Seine) to 3.9 (Guyane). Growth was strongest in Pyrénées-Orientales (+64%); Territoire de Belfort fell 23%.
 6. **Who is missing.** Residents of priority neighbourhoods (QPV) hold **2.2%** of tennis licences, against **4.7%** in other single-sport federations (2.2× less).
 
@@ -66,7 +66,7 @@ Exact URLs and byte sizes are in `seeds.json`. See `DATASET.md` for the variable
 2. **Type & validate**: identifiers read as text (keeps `01`, `2A`), counts coerced to integers. Recorded per file: non-numeric cells, negative cells, rows where sex × age ≠ total, duplicate keys, missing identifiers, unknown sex/age, out-of-scope share.
 3. **Harmonise** sex × age columns (2019–2021 carry extra "unknown sex" columns): 17 five-year bands × {women, men, unknown} → 5 age groups.
 4. **Stable federation key** from the normalised name: INJEP re-coded 6 federations between years (squash, karate, dance, American football, baseball, alpine clubs).
-5. **Features**: QPV flag (`QP…`/`QN…` inside, `CSZ`/`HZ` outside, `NR` unallocated); benchmark = all single-sport federations (codes 1xx/2xx) except tennis; population join (2022–23 use 2021).
+5. **Features**: QPV flag (`QP…`/`QN…` inside, `CSZ`/`HZ` outside, `NR` unallocated); benchmark = single-sport federations (codes 1xx/2xx) except tennis, **restricted to the 79 present in all five years** so membership is fixed (federations entering the census late, or missing a year such as kick-boxing in 2021, would otherwise count as growth or as an extra COVID drop); population join (2022–23 use 2021).
 6. **Pre-aggregate** to département × federation × sex × age group (~400k rows), plus tennis detail (5-year bands, communes).
 7. **Geometry**: simplify shapes (0.01°) and move the overseas départements into insets.
 8. **Cross-checks**: tennis totals are identical across the four derived tables and equal to the raw in-scope total, every year.

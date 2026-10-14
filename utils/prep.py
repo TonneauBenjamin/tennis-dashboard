@@ -321,8 +321,13 @@ class Data:
 
     @property
     def bench_keys(self) -> set[str]:
+        """Benchmark = single-sport federations (codes 1xx/2xx) except tennis, present in EVERY year.
+        A fixed membership keeps the comparison like-for-like: federations that enter the census late
+        (e.g. radio-controlled cars in 2022) or miss a year (kick-boxing 2021, squash 2020) would
+        otherwise show up as growth or as an extra COVID drop."""
         f = self.federations
-        return set(f.loc[f["single_sport"] & (f["code"] != TENNIS_CODE), "fed_key"])
+        present_all_years = f[[str(y) for y in YEARS]].gt(0).all(axis=1)
+        return set(f.loc[f["single_sport"] & (f["code"] != TENNIS_CODE) & present_all_years, "fed_key"])
 
     def fed_name(self, key: str) -> str:
         n = str(self.federations.set_index("fed_key")["name"].get(key, key))
