@@ -6,7 +6,7 @@ An interactive Streamlit data story built on the official INJEP census of sports
 
 - **Live app:** https://tennis-dashboard-tonneau-benjamin.streamlit.app/
 - **Code repository:** https://github.com/TonneauBenjamin/tennis-dashboard
-- **Demo video (3 min):** `<add video link>`
+- **Demo video (3 min 41 s):** https://drive.google.com/file/d/16XXLYzt8LZIE9yDZzEGFztlKi3yDsywZ/view?usp=sharing
 - **Author:** Benjamin Tonneau · student ID 20230792 · group I2-DE_01 · EFREI Paris, Data Visualization 2026 (#EFREIDataStories2026)
 
 ---

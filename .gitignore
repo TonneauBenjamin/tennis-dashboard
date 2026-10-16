@@ -5,3 +5,7 @@ __pycache__/
 .venv/
 .DS_Store
 *.zip
+# demo videos are shared as a link, never committed
+*.mov
+*.mp4
+*.m4v
