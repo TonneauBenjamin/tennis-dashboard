@@ -46,6 +46,8 @@ Every section opens with **one headline insight sentence computed from the filte
 
 **Sidebar controls:** period (licence years), region, département, sex, age groups, comparison sport, map variable.
 
+**Language:** the whole dashboard (texts, headlines, KPIs, chart titles, axes, legends, tooltips, chart descriptions) switches between **English and Français** from the sidebar; filters are kept when switching. The sidebar also shows the EFREI logo, author, course and professor.
+
 ---
 
 ## 2. Data
@@ -113,10 +115,10 @@ sections/
 utils/
   io.py               constants from seeds.json, cached downloads (fetch_raw), loaders, licence sources
   prep.py             cleaning, validation, feature engineering, quality report, filter-aware tables
-  viz.py              chart functions with one consistent style + page building blocks
+  viz.py              chart functions with one consistent style, page building blocks, EN/FR translation (tr)
 data/processed/       8 parquet tables + quality_report.json (2.5 MB)
 data/raw/             raw downloads, created by download_data.py (not shipped)
-assets/               simplified département GeoJSON for the map
+assets/               simplified département GeoJSON for the map + EFREI logo
 download_data.py      data download script (with caching) → cleaning → validation → processed tables
 seeds.json            constants: source URLs and sizes, age groups, colours, seed
 requirements.txt      pinned dependencies

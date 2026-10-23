@@ -1,23 +1,55 @@
 {
   "_comment": "Single source of truth for constants: sources, scope, mappings and colours. Edit here, not in code.",
+  "credits": {
+    "author": "Benjamin TONNEAU",
+    "email": "benjamin.tonneau@efrei.net",
+    "program_en": "Engineering – Data Engineering",
+    "program_fr": "Cycle ingénieur – Data Engineering",
+    "year": "Promo 2028",
+    "linkedin": "https://www.linkedin.com/in/benjamin-tonneau/",
+    "github": "https://github.com/TonneauBenjamin",
+    "course": "ST2DVZ-2627PSA01 - Data Analysis & Visualization",
+    "professor": "Mano Joseph MATHEW",
+    "professor_email": "mano.mathew@efrei.fr"
+  },
   "random_seed": 42,
-  "years": [2019, 2020, 2021, 2022, 2023],
+  "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
   "tennis_code": "123",
   "population_last_year": 2021,
   "min_federation_size_for_comparison": 100000,
   "default_comparison_code": "111",
-
   "sources": {
     "licences": {
       "producer": "INJEP – MEDES (Ministère des Sports), geocoded by INSEE",
       "dataset_page": "https://www.data.gouv.fr/datasets/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports",
       "license": "Licence Ouverte / Open Licence 2.0 (Etalab)",
       "files": {
-        "2019": {"url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20231207-134205/lic-data-2019.csv", "bytes": 266754279},
-        "2020": {"url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20231207-134516/lic-data-2020.csv", "bytes": 240546787},
-        "2021": {"url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20231207-134903/lic-data-2021.csv", "bytes": 225825478},
-        "2022": {"url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20241230-162428/lic-data-2022.csv", "bytes": 247714299},
-        "2023": {"url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20251229-163107/lic-data-2023.csv", "bytes": 256370260}
+        "2019": {
+          "url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20231207-134205/lic-data-2019.csv",
+          "bytes": 266754279
+        },
+        "2020": {
+          "url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20231207-134516/lic-data-2020.csv",
+          "bytes": 240546787
+        },
+        "2021": {
+          "url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20231207-134903/lic-data-2021.csv",
+          "bytes": 225825478
+        },
+        "2022": {
+          "url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20241230-162428/lic-data-2022.csv",
+          "bytes": 247714299
+        },
+        "2023": {
+          "url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20251229-163107/lic-data-2023.csv",
+          "bytes": 256370260
+        }
       },
       "dictionary_url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20251229-163431/licences-dictionnaire-des-variables.xlsx",
       "federations_url": "https://static.data.gouv.fr/resources/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports/20251229-163349/liste-federations.xlsx"
@@ -36,26 +68,87 @@
       "url": "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-avec-outre-mer.geojson"
     }
   },
-
-  "age_bands": ["1 à 4", "5 à 9", "10 à 14", "15 à 19", "20 à 24", "25 à 29", "30 à 34", "35 à 39",
-                "40 à 44", "45 à 49", "50 à 54", "55 à 59", "60 à 64", "65 à 69", "70 à 74", "75 à 79", "80 à 99"],
+  "age_bands": [
+    "1 à 4",
+    "5 à 9",
+    "10 à 14",
+    "15 à 19",
+    "20 à 24",
+    "25 à 29",
+    "30 à 34",
+    "35 à 39",
+    "40 à 44",
+    "45 à 49",
+    "50 à 54",
+    "55 à 59",
+    "60 à 64",
+    "65 à 69",
+    "70 à 74",
+    "75 à 79",
+    "80 à 99"
+  ],
   "age_groups": {
-    "Children (1–14)": ["1 à 4", "5 à 9", "10 à 14"],
-    "Teens (15–19)": ["15 à 19"],
-    "Young adults (20–34)": ["20 à 24", "25 à 29", "30 à 34"],
-    "Adults (35–54)": ["35 à 39", "40 à 44", "45 à 49", "50 à 54"],
-    "Seniors (55+)": ["55 à 59", "60 à 64", "65 à 69", "70 à 74", "75 à 79", "80 à 99"]
+    "Children (1–14)": [
+      "1 à 4",
+      "5 à 9",
+      "10 à 14"
+    ],
+    "Teens (15–19)": [
+      "15 à 19"
+    ],
+    "Young adults (20–34)": [
+      "20 à 24",
+      "25 à 29",
+      "30 à 34"
+    ],
+    "Adults (35–54)": [
+      "35 à 39",
+      "40 à 44",
+      "45 à 49",
+      "50 à 54"
+    ],
+    "Seniors (55+)": [
+      "55 à 59",
+      "60 à 64",
+      "65 à 69",
+      "70 à 74",
+      "75 à 79",
+      "80 à 99"
+    ]
   },
-
   "overseas_insets": {
     "_comment": "Target boxes [lon_min, lat_min, lon_max, lat_max] where overseas départements are drawn as insets west of the mainland.",
-    "971": [-8.6, 46.9, -6.6, 48.4],
-    "972": [-8.6, 45.2, -6.9, 46.6],
-    "973": [-8.6, 42.6, -6.6, 44.9],
-    "974": [-6.2, 41.3, -4.6, 42.6],
-    "976": [-4.2, 41.3, -3.2, 42.4]
+    "971": [
+      -8.6,
+      46.9,
+      -6.6,
+      48.4
+    ],
+    "972": [
+      -8.6,
+      45.2,
+      -6.9,
+      46.6
+    ],
+    "973": [
+      -8.6,
+      42.6,
+      -6.6,
+      44.9
+    ],
+    "974": [
+      -6.2,
+      41.3,
+      -4.6,
+      42.6
+    ],
+    "976": [
+      -4.2,
+      41.3,
+      -3.2,
+      42.4
+    ]
   },
-
   "colors": {
     "tennis": "#eb6834",
     "comparison": "#2a78d6",
@@ -68,7 +161,24 @@
     "muted": "#898781",
     "surface": "#fcfcfb",
     "covid_band": "rgba(137,135,129,0.12)",
-    "sequential": ["#dbe9fb", "#b7d3f6", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"],
-    "diverging": ["#b8322f", "#e34948", "#f2a19f", "#f0efec", "#9ec5f4", "#3987e5", "#184f95"]
+    "sequential": [
+      "#dbe9fb",
+      "#b7d3f6",
+      "#9ec5f4",
+      "#6da7ec",
+      "#3987e5",
+      "#256abf",
+      "#184f95",
+      "#0d366b"
+    ],
+    "diverging": [
+      "#b8322f",
+      "#e34948",
+      "#f2a19f",
+      "#f0efec",
+      "#9ec5f4",
+      "#3987e5",
+      "#184f95"
+    ]
   }
 }
